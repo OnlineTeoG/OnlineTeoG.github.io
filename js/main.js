@@ -214,9 +214,62 @@ function initProjectDetail() {
   `;
 }
 
+/* ---------- about.html: section tabs ---------- */
+
+function initAboutTabs() {
+  const tabRow = document.getElementById("about-tabs");
+  if (!tabRow) return;
+
+  const buttons = Array.from(tabRow.querySelectorAll(".tab-btn"));
+  const panels = Array.from(document.querySelectorAll("[data-tab-panel]"));
+
+  function show(name) {
+    const target = panels.find((p) => p.getAttribute("data-tab-panel") === name);
+    if (!target) return false;
+
+    panels.forEach((p) => {
+      p.hidden = p !== target;
+    });
+    buttons.forEach((b) => {
+      const on = b.getAttribute("data-tab") === name;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    return true;
+  }
+
+  tabRow.addEventListener("click", (e) => {
+    const btn = e.target.closest(".tab-btn");
+    if (!btn) return;
+    const name = btn.getAttribute("data-tab");
+    if (show(name)) {
+      // Shareable URL, without stacking a history entry per click
+      history.replaceState(null, "", `?tab=${name}`);
+    }
+  });
+
+  // Left/right arrows move between tabs, as a tablist should
+  tabRow.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    const i = buttons.findIndex((b) => b.classList.contains("active"));
+    if (i === -1) return;
+    const step = e.key === "ArrowRight" ? 1 : -1;
+    const next = buttons[(i + step + buttons.length) % buttons.length];
+    next.click();
+    next.focus();
+    e.preventDefault();
+  });
+
+  // Link straight to a tab: about.html?tab=wasps (or #wasps)
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get("tab") || window.location.hash.replace("#", "");
+  if (!requested || !show(requested)) show("experience");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initFeaturedGrid();
   initProjectsPage();
   initProjectDetail();
+  initAboutTabs();
 });

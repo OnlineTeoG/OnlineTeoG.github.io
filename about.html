@@ -39,274 +39,380 @@
   </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">My Connection to the WASPs</span></div>
+<div class="wrap">
+  <div class="tab-row" id="about-tabs" role="tablist" aria-label="About sections">
+    <button class="tab-btn" role="tab" data-tab="experience" aria-selected="false">Experience</button>
+    <button class="tab-btn" role="tab" data-tab="flying" aria-selected="false">Flying</button>
+    <button class="tab-btn" role="tab" data-tab="wasps" aria-selected="false">The WASPs</button>
+  </div>
+</div>
 
-    <p class="wasp-lede">
-      Flying is the family trade. My great-grandmother, <strong>E. Marie Barrett
-      Marsh</strong> (1919&ndash;1997), flew for the U.S. Army Air Forces during the
-      Second World War as one of the Women Airforce Service Pilots &mdash; the WASP.
-      Two of her grandchildren went on to fly for the airlines. I&rsquo;m a
-      great-grandchild with a fresh private certificate and an instrument rating in
-      progress, which puts me a long way behind her but on the same heading.
-    </p>
+<!-- =========================================================
+     TAB 1 — EXPERIENCE (default)
+     ========================================================= -->
+<div class="tab-panel" data-tab-panel="experience" role="tabpanel" aria-label="Experience" hidden>
 
-    <div class="spec-strip">
-      <div class="spec-cell">
-        <div class="label">Applied</div>
-        <div class="value">~25,000</div>
-      </div>
-      <div class="spec-cell">
-        <div class="label">Earned Wings</div>
-        <div class="value">1,074</div>
-      </div>
-      <div class="spec-cell">
-        <div class="label">Aircraft Types</div>
-        <div class="value">78</div>
-      </div>
-      <div class="spec-cell">
-        <div class="label">Lives Lost</div>
-        <div class="value">38</div>
+  <section>
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Education &amp; Experience</span></div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="t-date">Sept 2025 — Present</div>
+          <h3>Northeastern University, Boston, MA</h3>
+          <p class="dim">College of Engineering. Studying towards a Mechanical Engineering
+            major with a minor in Aerospace Engineering.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">June — July 2025</div>
+          <h3>Intern — Matt Roman Design Build Restoration LLC, Cambridge, MA</h3>
+          <p class="dim">Helped streamline the technological and organizational side of a
+            private contractor managing multiple sites — organizing construction
+            efforts, IT support, and communication between crews and material
+            providers.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">April — May 2025</div>
+          <h3>Intern — Clearmotion, Billerica, MA</h3>
+          <p class="dim">Trained and coordinated a machine-learning model to recognize
+            hand, face, and body gestures. The result was a patented, functioning
+            model that could program a car to respond to gestures using
+            Clearmotion's active suspension technology.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">July — August 2024</div>
+          <h3>Intern — Turner Construction, Boston, MA</h3>
+          <p class="dim">Observed the design and construction industry in action,
+            touring an MEP manufacturer, an architecture firm, a diversity
+            consultant, and other stakeholders on active projects.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">Sept 2021 — May 2025</div>
+          <h3>Melrose High School, Melrose, MA</h3>
+          <p class="dim">3.96 GPA. Graduated with 11 AP credits across various STEM
+            fields.</p>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <!--
-      PHOTO CAPTIONS - please verify before this merges to main:
-        1. "Weather Wagon" - aircraft type not identified. Her records list the
-           C-45, C-60 and UC-78 twins; if you know which one this is, name it.
-        2. "Buddy ride" - is Marie in this photo, and which seat? Type unconfirmed.
-        3. Portrait - assumed to be Marie. Add the date if you know it.
-        4. B-17 photo is the well-known USAAF press photograph, NOT family.
-           Captioned as such deliberately. Do not let it read as her.
-    -->
-    <div class="archive-grid">
-
-      <figure>
-        <div class="frame">
-          <img src="assets/images/wasp/marie-barrett-marsh-portrait.jpg"
-               alt="Portrait of Marie Barrett Marsh in a leather flight jacket, cloth flying helmet and goggles.">
+  <section class="tight">
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Clubs &amp; Activities</span></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="t-date">2026</div>
+          <h3>Northeastern Aviation and Flight Club</h3>
+          <p class="dim">Participating member — flies as a private pilot and helps
+            advise other students interested in pursuing a pilot license.</p>
         </div>
-        <figcaption>
-          <span class="cap-label">Marie Barrett Marsh</span>
-          Leather jacket, cloth helmet, goggles pushed up &mdash; the standard
-          portrait every WASP sat for.
-        </figcaption>
-      </figure>
-
-      <figure>
-        <div class="frame">
-          <img src="assets/images/wasp/marie-barrett-marsh-weather-wagon.jpg"
-               alt="A WASP in uniform standing in front of a polished twin-engine aircraft with WEATHER WAGON painted on the nose.">
+        <div class="timeline-item">
+          <div class="t-date">2026</div>
+          <h3>Renewable Energy Northeastern University</h3>
+          <p class="dim">Designing and manufacturing a functioning wind turbine for
+            competition — blade shape, pitch control, and an emergency brake
+            system in Onshape. <a href="project.html?slug=wind-turbine-competition">See project →</a></p>
         </div>
-        <figcaption>
-          <span class="cap-label">&ldquo;Weather Wagon&rdquo;</span>
-          In uniform beside a polished twin carrying <em>Weather Wagon</em> on the
-          nose &mdash; painted for the outfit she was assigned to, the Weather Wing
-          at Asheville.
-        </figcaption>
-      </figure>
-
-      <figure>
-        <div class="frame">
-          <img src="assets/images/wasp/marie-barrett-marsh-buddy-ride.jpg"
-               alt="Two women pilots in the tandem cockpits of a military aircraft, one shielding her eyes against the sun.">
+        <div class="timeline-item">
+          <div class="t-date">2022 — 2025</div>
+          <h3>FIRST Robotics Competition (FRC)</h3>
+          <p class="dim">Modeled parts in Onshape and designed solutions for a
+            partially autonomous competition robot. <a href="project.html?slug=frc-robot-design">See project →</a></p>
         </div>
-        <figcaption>
-          <span class="cap-label">Buddy ride</span>
-          Two pilots in the tandem cockpits of a service aircraft &mdash; front seat
-          and back, canopies open on the ramp.
-        </figcaption>
-      </figure>
-
-      <figure>
-        <div class="frame">
-          <img src="assets/images/wasp/wasp-b17-pistol-packin-mama.jpg"
-               alt="Four WASP pilots in flight jackets carrying parachutes, walking away from a B-17 bomber with Pistol Packin Mama painted on the nose.">
+        <div class="timeline-item">
+          <div class="t-date">2016 — 2021</div>
+          <h3>First LEGO League Robotics Team (FLL)</h3>
+          <p class="dim">Designed a fully autonomous LEGO robot and attachments to
+            complete challenges on the game board. The team qualified for the
+            state competition every year, winning an award each year.</p>
         </div>
-        <figcaption>
-          <span class="cap-label">Not her &mdash; but her outfit</span>
-          The best-known photograph of the WASP: Frances Green, Margaret
-          &ldquo;Peg&rdquo; Kirchner, Ann Waldner and Blanche Osborn walking off the
-          B-17 <em>Pistol Packin&rsquo; Mama</em> at Lockbourne, Ohio, during
-          four-engine ferry training. A USAAF press photo rather than a family one
-          &mdash; included because it shows the job.
-        </figcaption>
-      </figure>
-
+      </div>
     </div>
+  </section>
 
-    <div class="wasp-body">
+  <section class="tight">
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Skills &amp; Tools</span></div>
+      <div class="skills-grid">
+        <span class="chip">SolidWorks</span>
+        <span class="chip">Onshape</span>
+        <span class="chip">MATLAB</span>
+        <span class="chip">3D Printing</span>
+        <span class="chip">Laser Cutting</span>
+        <span class="chip">Carving Machines</span>
+        <span class="chip">Vinyl Cutters</span>
+        <span class="chip">Machine Learning / AI</span>
+      </div>
+      <p class="dim" style="margin-top:20px;">Fluent in English (native) and biliterate in Italian.</p>
+    </div>
+  </section>
 
-      <h3>Marie Barrett Marsh &mdash; Class 43-W-7</h3>
-      <p>
-        She learned to fly before the war, earning her license through the Civilian
-        Pilot Training Program in 1940 while at Youngstown College &mdash; one of two
-        women in a class of twenty-nine. She was teaching math and science in Ohio
-        schools when the call for women pilots went out.
-      </p>
-      <p>
-        She reported to Avenger Field in Sweetwater, Texas in May 1943 and graduated
-        that November with class 43-W-7. Her assignment was Weather Wing headquarters
-        at Asheville, North Carolina, flying the Wing&rsquo;s leadership, running
-        courier missions to the Pentagon, and flying mercy flights. Her records list
-        the B-26 Marauder, the A-24 dive bomber, and the C-45, C-60 and UC-78 twins.
-      </p>
-      <p>
-        She married John Marsh in June 1944, raised eight children in Vienna, Ohio,
-        and kept her license current, flying privately until cataract surgery
-        grounded her at 58. Ohio inducted her into its Women&rsquo;s Hall of Fame in
-        1999, two years after she died.
+</div>
+
+<!-- =========================================================
+     TAB 2 — FLYING
+     Add photos to assets/images/flying/ and drop a <figure>
+     into the .archive-grid below, replacing a placeholder:
+
+       <figure>
+         <div class="frame">
+           <img src="assets/images/flying/your-photo.jpg" alt="...">
+         </div>
+         <figcaption>
+           <span class="cap-label">Short label</span>
+           One or two sentences of caption.
+         </figcaption>
+       </figure>
+     ========================================================= -->
+<div class="tab-panel" data-tab-panel="flying" role="tabpanel" aria-label="Flying" hidden>
+
+  <section>
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Flying</span></div>
+
+      <p class="wasp-lede">
+        Flying is the family trade. My great-grandmother flew for the U.S. Army Air
+        Forces in the Second World War, two of her grandchildren went on to fly for
+        the airlines, and I hold a private certificate with an instrument rating in
+        progress. It puts me a long way behind her, but on the same heading.
       </p>
 
-      <h3>Who the WASPs were</h3>
-      <p>
-        The WASP grew out of two separate 1942 experiments &mdash; Nancy Harkness
-        Love&rsquo;s ferrying squadron and Jacqueline Cochran&rsquo;s training
-        detachment &mdash; merged in August 1943 under Cochran. Their job was every
-        domestic flying mission that did not need a combat crew, so that male pilots
-        could be sent overseas: ferrying new aircraft from the factory, test-flying
-        airframes fresh out of repair, instructing, and towing targets while
-        anti-aircraft crews fired live rounds at the sleeve behind them.
-      </p>
-      <p>
-        Roughly 25,000 women applied, 1,830 were accepted for training, and 1,074
-        earned their wings. Between September 1942 and December 1944 they delivered
-        12,650 aircraft across 78 different types &mdash; from primary trainers up to
-        the B-17 and the B-29 &mdash; and logged more than 60 million miles.
-        Thirty-eight of them were killed doing it.
-      </p>
+      <div class="spec-strip">
+        <div class="spec-cell">
+          <div class="label">Certificate</div>
+          <div class="value">Private ASEL</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">In Progress</div>
+          <div class="value">Instrument</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Club</div>
+          <div class="value">NU Aviation</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Based In</div>
+          <div class="value">Boston, MA</div>
+        </div>
+      </div>
 
-      <h3>Thirty-three years to be called veterans</h3>
-      <div class="placard">
+      <div class="archive-grid">
+        <div class="photo-pending">Photo pending</div>
+        <div class="photo-pending">Photo pending</div>
+      </div>
+
+      <div class="wasp-body">
+        <h3>In the air</h3>
         <p>
-          The WASP served as civilians for the entire war. When a WASP was killed
-          there was no military funeral, no flag for the family, and no government
-          money to send her home &mdash; the other women in her squadron paid for it
-          themselves.
+          I fly single-engine airplanes as a private pilot and I'm working through the
+          instrument rating now — the one that lets you fly in cloud on instruments
+          alone, and the one that turns flying from a fair-weather activity into
+          something you can actually plan a trip around. I'm a participating member of
+          the Northeastern Aviation and Flight Club, where I also help advise other
+          students who want to start working toward a license of their own.
+        </p>
+
+        <h3>On the bench</h3>
+        <p>
+          Flying leaks into everything else I build. It's the reason the aerospace
+          minor is attached to the mechanical engineering degree, and it's why the
+          things I make in LEGO Technic keep turning out to be airplanes with working
+          control surfaces rather than static models — once you've handled the real
+          controls, a wing that doesn't move stops being satisfying.
+          <a href="project.html?slug=technic-experimental-floatplane">See the floatplane →</a>
+        </p>
+
+        <h3>Where it comes from</h3>
+        <p>
+          The reason any of this is a family trade at all is Marie Barrett Marsh, my
+          great-grandmother, who flew for the Weather Wing out of Asheville, North
+          Carolina as one of the Women Airforce Service Pilots.
+          <a href="about.html?tab=wasps">Read about the WASPs →</a>
         </p>
       </div>
-      <p>
-        The program was disbanded on 20 December 1944, and for decades afterward its
-        records sat archived and largely forgotten. Congress did not recognize WASP
-        service as active military duty until 1977. The Congressional Gold Medal
-        followed in 2009, accepted at the Capitol in March 2010 by the roughly 200
-        surviving members able to travel there &mdash; twelve years after Marie died.
-        Her medal is held in a museum collection today.
+
+    </div>
+  </section>
+
+</div>
+
+<!-- =========================================================
+     TAB 3 — THE WASPs
+
+     PHOTO CAPTIONS — please verify before this merges to main:
+       1. "Weather Wagon" — aircraft type not identified. Her records list the
+          C-45, C-60 and UC-78 twins; if you know which one this is, name it.
+       2. "Buddy ride" — is Marie in this photo, and which seat? Type unconfirmed.
+       3. Portrait — assumed to be Marie. Add the date if you know it.
+       4. B-17 photo is the well-known USAAF press photograph, NOT family.
+          Captioned as such deliberately. Do not let it read as her.
+     ========================================================= -->
+<div class="tab-panel" data-tab-panel="wasps" role="tabpanel" aria-label="The WASPs" hidden>
+
+  <section>
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">My Connection to the WASPs</span></div>
+
+      <p class="wasp-lede">
+        My great-grandmother, <strong>E. Marie Barrett Marsh</strong>
+        (1919&ndash;1997), flew for the U.S. Army Air Forces during the Second World
+        War as one of the Women Airforce Service Pilots &mdash; the WASP. This is who
+        she was, and what the WASP did.
       </p>
 
-      <div class="source-list">
-        <span class="cap-label">Sources</span>
-        <a href="https://cafriseabove.org/e-marie-barrett-marsh/" target="_blank" rel="noopener">CAF Rise Above &mdash; E. Marie Barrett Marsh</a><br>
-        <a href="https://cafriseabove.org/wasp_artifact/marie-barrett-marsh-congressional-gold-medal/" target="_blank" rel="noopener">CAF Rise Above &mdash; her Congressional Gold Medal</a><br>
-        <a href="https://waspmuseum.org/history/" target="_blank" rel="noopener">National WASP WWII Museum &mdash; History</a><br>
-        <a href="https://www.nationalww2museum.org/war/articles/wasp-women-airforce-service-pilots" target="_blank" rel="noopener">National WWII Museum &mdash; WASP</a><br>
-        <a href="https://www.nps.gov/articles/000/women-airforce-service-pilots-wasp.htm" target="_blank" rel="noopener">National Park Service &mdash; WASP</a>
+      <div class="spec-strip">
+        <div class="spec-cell">
+          <div class="label">Applied</div>
+          <div class="value">~25,000</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Earned Wings</div>
+          <div class="value">1,074</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Aircraft Types</div>
+          <div class="value">78</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Lives Lost</div>
+          <div class="value">38</div>
+        </div>
       </div>
 
+      <div class="archive-grid">
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/marie-barrett-marsh-portrait.jpg"
+                 alt="Portrait of Marie Barrett Marsh in a leather flight jacket, cloth flying helmet and goggles.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Marie Barrett Marsh</span>
+            Leather jacket, cloth helmet, goggles pushed up &mdash; the standard
+            portrait every WASP sat for.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/marie-barrett-marsh-weather-wagon.jpg"
+                 alt="A WASP in uniform standing in front of a polished twin-engine aircraft with WEATHER WAGON painted on the nose.">
+          </div>
+          <figcaption>
+            <span class="cap-label">&ldquo;Weather Wagon&rdquo;</span>
+            In uniform beside a polished twin carrying <em>Weather Wagon</em> on the
+            nose &mdash; painted for the outfit she was assigned to, the Weather Wing
+            at Asheville.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/marie-barrett-marsh-buddy-ride.jpg"
+                 alt="Two women pilots in the tandem cockpits of a military aircraft, one shielding her eyes against the sun.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Buddy ride</span>
+            Two pilots in the tandem cockpits of a service aircraft &mdash; front seat
+            and back, canopies open on the ramp.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/wasp-b17-pistol-packin-mama.jpg"
+                 alt="Four WASP pilots in flight jackets carrying parachutes, walking away from a B-17 bomber with Pistol Packin Mama painted on the nose.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Not her &mdash; but her outfit</span>
+            The best-known photograph of the WASP: Frances Green, Margaret
+            &ldquo;Peg&rdquo; Kirchner, Ann Waldner and Blanche Osborn walking off the
+            B-17 <em>Pistol Packin&rsquo; Mama</em> at Lockbourne, Ohio, during
+            four-engine ferry training. A USAAF press photo rather than a family one
+            &mdash; included because it shows the job.
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="wasp-body">
+
+        <h3>Marie Barrett Marsh &mdash; Class 43-W-7</h3>
+        <p>
+          She learned to fly before the war, earning her license through the Civilian
+          Pilot Training Program in 1940 while at Youngstown College &mdash; one of two
+          women in a class of twenty-nine. She was teaching math and science in Ohio
+          schools when the call for women pilots went out.
+        </p>
+        <p>
+          She reported to Avenger Field in Sweetwater, Texas in May 1943 and graduated
+          that November with class 43-W-7. Her assignment was Weather Wing headquarters
+          at Asheville, North Carolina, flying the Wing&rsquo;s leadership, running
+          courier missions to the Pentagon, and flying mercy flights. Her records list
+          the B-26 Marauder, the A-24 dive bomber, and the C-45, C-60 and UC-78 twins.
+        </p>
+        <p>
+          She married John Marsh in June 1944, raised eight children in Vienna, Ohio,
+          and kept her license current, flying privately until cataract surgery
+          grounded her at 58. Ohio inducted her into its Women&rsquo;s Hall of Fame in
+          1999, two years after she died.
+        </p>
+
+        <h3>Who the WASPs were</h3>
+        <p>
+          The WASP grew out of two separate 1942 experiments &mdash; Nancy Harkness
+          Love&rsquo;s ferrying squadron and Jacqueline Cochran&rsquo;s training
+          detachment &mdash; merged in August 1943 under Cochran. Their job was every
+          domestic flying mission that did not need a combat crew, so that male pilots
+          could be sent overseas: ferrying new aircraft from the factory, test-flying
+          airframes fresh out of repair, instructing, and towing targets while
+          anti-aircraft crews fired live rounds at the sleeve behind them.
+        </p>
+        <p>
+          Roughly 25,000 women applied, 1,830 were accepted for training, and 1,074
+          earned their wings. Between September 1942 and December 1944 they delivered
+          12,650 aircraft across 78 different types &mdash; from primary trainers up to
+          the B-17 and the B-29 &mdash; and logged more than 60 million miles.
+          Thirty-eight of them were killed doing it.
+        </p>
+
+        <h3>Thirty-three years to be called veterans</h3>
+        <div class="placard">
+          <p>
+            The WASP served as civilians for the entire war. When a WASP was killed
+            there was no military funeral, no flag for the family, and no government
+            money to send her home &mdash; the other women in her squadron paid for it
+            themselves.
+          </p>
+        </div>
+        <p>
+          The program was disbanded on 20 December 1944, and for decades afterward its
+          records sat archived and largely forgotten. Congress did not recognize WASP
+          service as active military duty until 1977. The Congressional Gold Medal
+          followed in 2009, accepted at the Capitol in March 2010 by the roughly 200
+          surviving members able to travel there &mdash; twelve years after Marie died.
+          Her medal is held in a museum collection today.
+        </p>
+
+        <div class="source-list">
+          <span class="cap-label">Sources</span>
+          <a href="https://cafriseabove.org/e-marie-barrett-marsh/" target="_blank" rel="noopener">CAF Rise Above &mdash; E. Marie Barrett Marsh</a><br>
+          <a href="https://cafriseabove.org/wasp_artifact/marie-barrett-marsh-congressional-gold-medal/" target="_blank" rel="noopener">CAF Rise Above &mdash; her Congressional Gold Medal</a><br>
+          <a href="https://waspmuseum.org/history/" target="_blank" rel="noopener">National WASP WWII Museum &mdash; History</a><br>
+          <a href="https://www.nationalww2museum.org/war/articles/wasp-women-airforce-service-pilots" target="_blank" rel="noopener">National WWII Museum &mdash; WASP</a><br>
+          <a href="https://www.nps.gov/articles/000/women-airforce-service-pilots-wasp.htm" target="_blank" rel="noopener">National Park Service &mdash; WASP</a>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">Education &amp; Experience</span></div>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="t-date">Sept 2025 — Present</div>
-        <h3>Northeastern University, Boston, MA</h3>
-        <p class="dim">College of Engineering. Studying towards a Mechanical Engineering
-          major with a minor in Aerospace Engineering.</p>
-      </div>
-
-      <div class="timeline-item">
-        <div class="t-date">June — July 2025</div>
-        <h3>Intern — Matt Roman Design Build Restoration LLC, Cambridge, MA</h3>
-        <p class="dim">Helped streamline the technological and organizational side of a
-          private contractor managing multiple sites — organizing construction
-          efforts, IT support, and communication between crews and material
-          providers.</p>
-      </div>
-
-      <div class="timeline-item">
-        <div class="t-date">April — May 2025</div>
-        <h3>Intern — Clearmotion, Billerica, MA</h3>
-        <p class="dim">Trained and coordinated a machine-learning model to recognize
-          hand, face, and body gestures. The result was a patented, functioning
-          model that could program a car to respond to gestures using
-          Clearmotion's active suspension technology.</p>
-      </div>
-
-      <div class="timeline-item">
-        <div class="t-date">July — August 2024</div>
-        <h3>Intern — Turner Construction, Boston, MA</h3>
-        <p class="dim">Observed the design and construction industry in action,
-          touring an MEP manufacturer, an architecture firm, a diversity
-          consultant, and other stakeholders on active projects.</p>
-      </div>
-
-      <div class="timeline-item">
-        <div class="t-date">Sept 2021 — May 2025</div>
-        <h3>Melrose High School, Melrose, MA</h3>
-        <p class="dim">3.96 GPA. Graduated with 11 AP credits across various STEM
-          fields.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">Clubs &amp; Activities</span></div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="t-date">2026</div>
-        <h3>Northeastern Aviation and Flight Club</h3>
-        <p class="dim">Participating member — flies as a private pilot and helps
-          advise other students interested in pursuing a pilot license.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="t-date">2026</div>
-        <h3>Renewable Energy Northeastern University</h3>
-        <p class="dim">Designing and manufacturing a functioning wind turbine for
-          competition — blade shape, pitch control, and an emergency brake
-          system in Onshape. <a href="project.html?slug=wind-turbine-competition">See project →</a></p>
-      </div>
-      <div class="timeline-item">
-        <div class="t-date">2022 — 2025</div>
-        <h3>FIRST Robotics Competition (FRC)</h3>
-        <p class="dim">Modeled parts in Onshape and designed solutions for a
-          partially autonomous competition robot. <a href="project.html?slug=frc-robot-design">See project →</a></p>
-      </div>
-      <div class="timeline-item">
-        <div class="t-date">2016 — 2021</div>
-        <h3>First LEGO League Robotics Team (FLL)</h3>
-        <p class="dim">Designed a fully autonomous LEGO robot and attachments to
-          complete challenges on the game board. The team qualified for the
-          state competition every year, winning an award each year.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">Skills &amp; Tools</span></div>
-    <div class="skills-grid">
-      <span class="chip">SolidWorks</span>
-      <span class="chip">Onshape</span>
-      <span class="chip">MATLAB</span>
-      <span class="chip">3D Printing</span>
-      <span class="chip">Laser Cutting</span>
-      <span class="chip">Carving Machines</span>
-      <span class="chip">Vinyl Cutters</span>
-      <span class="chip">Machine Learning / AI</span>
-    </div>
-    <p class="dim" style="margin-top:20px;">Fluent in English (native) and biliterate in Italian.</p>
-  </div>
-</section>
+</div>
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:10px;">
