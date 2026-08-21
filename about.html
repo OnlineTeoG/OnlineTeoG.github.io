@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Matteo Giovanardi</title>
-<meta name="description" content="About Matteo Giovanardi — mechanical engineering student, aerospace minor, private pilot.">
+<meta name="description" content="About Matteo Giovanardi — mechanical engineering student at Northeastern, aerospace minor, private pilot — and the story of his great-grandmother Marie Barrett Marsh, a WWII Women Airforce Service Pilot (WASP).">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="about">
@@ -39,105 +39,526 @@
   </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">Education &amp; Experience</span></div>
-    <div class="timeline">
+<div class="wrap">
+  <div class="tab-row" id="about-tabs" role="tablist" aria-label="About sections">
+    <button class="tab-btn" role="tab" data-tab="experience" aria-selected="false">Experience</button>
+    <button class="tab-btn" role="tab" data-tab="flying" aria-selected="false">Flying</button>
+    <button class="tab-btn" role="tab" data-tab="wasps" aria-selected="false">The WASPs</button>
+  </div>
+</div>
 
-      <div class="timeline-item">
-        <div class="t-date">Sept 2025 — Present</div>
-        <h3>Northeastern University, Boston, MA</h3>
-        <p class="dim">College of Engineering. Studying towards a Mechanical Engineering
-          major with a minor in Aerospace Engineering.</p>
+<!-- =========================================================
+     TAB 1 — EXPERIENCE (default)
+     ========================================================= -->
+<div class="tab-panel" data-tab-panel="experience" role="tabpanel" aria-label="Experience" hidden>
+
+  <section>
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Education &amp; Experience</span></div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="t-date">Sept 2025 — Present</div>
+          <h3>Northeastern University, Boston, MA</h3>
+          <p class="dim">College of Engineering. Studying towards a Mechanical Engineering
+            major with a minor in Aerospace Engineering.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">June — July 2025</div>
+          <h3>Intern — Matt Roman Design Build Restoration LLC, Cambridge, MA</h3>
+          <p class="dim">Helped streamline the technological and organizational side of a
+            private contractor managing multiple sites — organizing construction
+            efforts, IT support, and communication between crews and material
+            providers.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">April — May 2025</div>
+          <h3>Intern — Clearmotion, Billerica, MA</h3>
+          <p class="dim">Trained and coordinated a machine-learning model to recognize
+            hand, face, and body gestures. The result was a patented, functioning
+            model that could program a car to respond to gestures using
+            Clearmotion's active suspension technology.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">July — August 2024</div>
+          <h3>Intern — Turner Construction, Boston, MA</h3>
+          <p class="dim">Observed the design and construction industry in action,
+            touring an MEP manufacturer, an architecture firm, a diversity
+            consultant, and other stakeholders on active projects.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">Sept 2021 — May 2025</div>
+          <h3>Melrose High School, Melrose, MA</h3>
+          <p class="dim">3.96 GPA. Graduated with 11 AP credits across various STEM
+            fields.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Clubs &amp; Activities</span></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="t-date">2026</div>
+          <h3>Northeastern Aviation and Flight Club</h3>
+          <p class="dim">Participating member — flies as a private pilot and helps
+            advise other students interested in pursuing a pilot license.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="t-date">2026</div>
+          <h3>Renewable Energy Northeastern University</h3>
+          <p class="dim">Designing and manufacturing a functioning wind turbine for
+            competition — blade shape, pitch control, and an emergency brake
+            system in Onshape. <a href="project.html?slug=wind-turbine-competition">See project →</a></p>
+        </div>
+        <div class="timeline-item">
+          <div class="t-date">2022 — 2025</div>
+          <h3>FIRST Robotics Competition (FRC)</h3>
+          <p class="dim">Modeled parts in Onshape and designed solutions for a
+            partially autonomous competition robot. <a href="project.html?slug=frc-robot-design">See project →</a></p>
+        </div>
+        <div class="timeline-item">
+          <div class="t-date">2016 — 2021</div>
+          <h3>First LEGO League Robotics Team (FLL)</h3>
+          <p class="dim">Designed a fully autonomous LEGO robot and attachments to
+            complete challenges on the game board. The team qualified for the
+            state competition every year, winning an award each year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Skills &amp; Tools</span></div>
+      <div class="skills-grid">
+        <span class="chip">SolidWorks</span>
+        <span class="chip">Onshape</span>
+        <span class="chip">MATLAB</span>
+        <span class="chip">3D Printing</span>
+        <span class="chip">Laser Cutting</span>
+        <span class="chip">Carving Machines</span>
+        <span class="chip">Vinyl Cutters</span>
+        <span class="chip">Machine Learning / AI</span>
+      </div>
+      <p class="dim" style="margin-top:20px;">Fluent in English (native) and biliterate in Italian.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- =========================================================
+     TAB 2 — FLYING
+     Add photos to assets/images/flying/ and drop a <figure>
+     into the .archive-grid below, replacing a placeholder:
+
+       <figure>
+         <div class="frame">
+           <img src="assets/images/flying/your-photo.jpg" alt="...">
+         </div>
+         <figcaption>
+           <span class="cap-label">Short label</span>
+           One or two sentences of caption.
+         </figcaption>
+       </figure>
+     ========================================================= -->
+<div class="tab-panel" data-tab-panel="flying" role="tabpanel" aria-label="Flying" hidden>
+
+  <section>
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">Flying</span></div>
+
+      <p class="wasp-lede">
+        Flying is the family trade, and it runs back four generations on both sides.
+        My great-grandfather flew fighters for the Italian military before Italy even
+        had an air force, and ended up in d&rsquo;Annunzio&rsquo;s squadron &mdash; the
+        one that flew over Vienna. My great-grandmother flew for the U.S. Army Air
+        Forces in the Second World War, and several of her children held private
+        licenses after her. My grandfathers flew on both sides of the Atlantic, one off
+        the grass at Bolzano and one in a homebuilt. I hold a private certificate with
+        an instrument rating in progress &mdash; a long way behind all of them, but on
+        the same heading.
+      </p>
+
+      <div class="spec-strip">
+        <div class="spec-cell">
+          <div class="label">Certificate</div>
+          <div class="value">Private ASEL</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">In Progress</div>
+          <div class="value">Instrument</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Club</div>
+          <div class="value">NU Aviation</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Based In</div>
+          <div class="value">Boston, MA</div>
+        </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="t-date">June — July 2025</div>
-        <h3>Intern — Matt Roman Design Build Restoration LLC, Cambridge, MA</h3>
-        <p class="dim">Helped streamline the technological and organizational side of a
-          private contractor managing multiple sites — organizing construction
-          efforts, IT support, and communication between crews and material
-          providers.</p>
+      <!--
+        FLYING PHOTOS - still open, if you want them in:
+          - Dates for any of the four photos.
+          - Kid photo: type of the experimental homebuilt.
+          - 1950s photo: type of the high-wing single. The other person in frame
+            is not a relative and is deliberately left unnamed.
+          - Luigi: birth/death years, and roughly when he took the tribunal
+            presidency, would let the timeline be stated properly.
+      -->
+      <div class="archive-grid">
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/flying/matteo-first-flights.jpg"
+                 alt="A young child in a red cap and aviation headset in the cockpit of a small experimental aircraft in flight, an adult pilot beside them.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Started early</span>
+            Headset on, microphone about level with my chin, in the right seat of an
+            experimental homebuilt &mdash; the placard is right there on the sidewall.
+            Flying it is my grandfather <strong>John E. Marsh Jr.</strong>, Marie&rsquo;s
+            son, which makes this three generations of the same family in one cockpit.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/flying/matteo-solo-n7246c.jpg"
+                 alt="Matteo Giovanardi standing beside a white and green Piper single-engine airplane, registration N7246C, on the ramp.">
+          </div>
+          <figcaption>
+            <span class="cap-label">First solo</span>
+            N7246C, a Piper Warrior, at Beverly Regional in Massachusetts &mdash; keys
+            in hand after taking it around on my own for the first time.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/flying/grandfather-alps-1950s.jpg"
+                 alt="A sepia photograph of a young man in a suit and a boy in a jacket standing beside a high-wing light aircraft on a grass airfield, with Alpine mountains and a hilltop castle behind.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Grass, suits and mountains</span>
+            My grandfather <strong>Enrico Giovanardi</strong>, Luigi&rsquo;s son
+            &mdash; the young man in the suit &mdash; beside a high-wing single at
+            Bolzano, back when the field was still grass and years off being paved. A
+            castle up on the ridge behind, and a jacket and tie on to go flying.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/flying/grandfather-trinidad-alps.jpg"
+                 alt="A man and two teenagers standing beside a red and white Socata Trinidad single-engine airplane with its gull-wing doors open, mountains behind.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Doors up in the valley</span>
+            Enrico again, decades on and behind the glasses, with my father and my
+            uncle beside his Socata TB20 Trinidad &mdash; doors up, Alps filling the
+            background. Same family, same mountains, rather more paint.
+          </figcaption>
+        </figure>
+
       </div>
 
-      <div class="timeline-item">
-        <div class="t-date">April — May 2025</div>
-        <h3>Intern — Clearmotion, Billerica, MA</h3>
-        <p class="dim">Trained and coordinated a machine-learning model to recognize
-          hand, face, and body gestures. The result was a patented, functioning
-          model that could program a car to respond to gestures using
-          Clearmotion's active suspension technology.</p>
-      </div>
+      <div class="wasp-body">
+        <h3>In the air</h3>
+        <p>
+          I fly single-engine airplanes as a private pilot and I'm working through the
+          instrument rating now — the one that lets you fly in cloud on instruments
+          alone, and the one that turns flying from a fair-weather activity into
+          something you can actually plan a trip around. I'm a participating member of
+          the Northeastern Aviation and Flight Club, where I also help advise other
+          students who want to start working toward a license of their own.
+        </p>
 
-      <div class="timeline-item">
-        <div class="t-date">July — August 2024</div>
-        <h3>Intern — Turner Construction, Boston, MA</h3>
-        <p class="dim">Observed the design and construction industry in action,
-          touring an MEP manufacturer, an architecture firm, a diversity
-          consultant, and other stakeholders on active projects.</p>
-      </div>
+        <h3>Before Italy had an air force</h3>
+        <p>
+          My great-grandfather on my father&rsquo;s side, <strong>Luigi
+          Giovanardi</strong>, flew for the Italian military in the First World War and
+          into 1919 &mdash; and at that point there was no Italian Air Force to fly
+          for. Italian military aviation was the
+          <em>Corpo Aeronautico Militare</em>, formed on 7 January 1915 as a branch of
+          the Royal Army rather than a service in its own right. It did not become the
+          independent Regia Aeronautica until 28 March 1923. Italy had been the first
+          nation in the world to use aircraft in war, over Libya in 1911, and by the
+          armistice it had built more than 12,000 of them.
+        </p>
+        <p>
+          He flew first with the <strong>71ª Squadriglia</strong>, one of Italy&rsquo;s
+          original fighter units. It was stood up in Turin on 30 January 1916 as the
+          <em>2ª Squadriglia Caccia</em> &mdash; the 2nd Fighter Squadron &mdash; and
+          renumbered 71ª that April. It began with no armament at all and had to wait
+          on machine guns before flying its first operational sorties in February 1916.
+          Across the war it flew close to 3,000 combat sorties, including the defence of
+          the Asiago Plateau, scored 17 victories and produced two aces, at the cost of
+          six pilots killed. Its aircraft were the French types Italy leaned on early:
+          Nieuport 10s, 11s and 17s, the SPAD VII, and the Hanriot HD.1.
+        </p>
 
-      <div class="timeline-item">
-        <div class="t-date">Sept 2021 — May 2025</div>
-        <h3>Melrose High School, Melrose, MA</h3>
-        <p class="dim">3.96 GPA. Graduated with 11 AP credits across various STEM
-          fields.</p>
+        <h3>The 87ª Squadriglia and the flight over Vienna</h3>
+        <p>
+          He then moved to the <strong>87ª Squadriglia</strong> &mdash;
+          <em>&ldquo;La Serenissima,&rdquo;</em> which flew with the Lion of St Mark
+          painted on its fuselages and was commanded by the poet Gabriele
+          d&rsquo;Annunzio. On 9 August 1918 that squadron did the thing it is
+          remembered for. Eleven Ansaldo SVA biplanes left Due Carrare, near Padua, and
+          flew more than 1,200 km round trip across the Alps and enemy territory to
+          Vienna, arriving overhead around 9:20 in the morning. They took reconnaissance
+          photographs and dropped roughly 50,000 leaflets written by d&rsquo;Annunzio,
+          plus 350,000 more in German translation. They carried no bombs &mdash; only
+          paper.
+        </p>
+        <p>
+          D&rsquo;Annunzio commanded the squadron but was not at the controls: he was a
+          major, and he rode in the front cockpit of the formation&rsquo;s only
+          two-seater, flown by Captain Natale Palli. The other ten were single-seat
+          SVA.5s.
+        </p>
+        <p>
+          The eleven men who flew to Vienna that morning are each named in the record,
+          and Luigi is not among them &mdash; so his time with the Serenissima falls on
+          one side or the other of that particular flight. But this was his squadron,
+          and that was the outfit he belonged to.
+        </p>
+
+        <h3>After the war, a courtroom</h3>
+        <p>
+          He did not stay in aviation. Luigi went into law, and rose to become a judge
+          and eventually <strong>president of the tribunal in Bolzano</strong>, up in
+          what is now Alto Adige / S&uuml;dtirol.
+        </p>
+        <p>
+          There is a quiet symmetry in that posting. Bolzano had been Austrian
+          territory; it was assigned to Italy by the Treaty of Saint-Germain, signed on
+          10 September 1919 &mdash; the same year Luigi was still flying in Italian
+          uniform &mdash; and formally annexed the following October. So the pilot who
+          flew for Italy at the end of that war went on to preside over the courts of
+          one of the cities the war had redrawn onto the Italian map.
+        </p>
+        <p>
+          And the family stayed with it there. His son &mdash; my grandfather Enrico
+          &mdash; flew light aircraft out of Bolzano itself, off the grass, back before
+          the field was ever paved.
+        </p>
+
+        <h3>The WASP side</h3>
+        <p>
+          On the other side of the family, Marie Barrett Marsh &mdash; my
+          great-grandmother &mdash; flew for the Weather Wing out of Asheville, North
+          Carolina as one of the Women Airforce Service Pilots.
+          <a href="about.html?tab=wasps">Read about the WASPs &rarr;</a>
+        </p>
+
+        <h3>In the workshop</h3>
+        <p>
+          Flying leaks into everything else I build. It&rsquo;s the reason the aerospace
+          minor is attached to the mechanical engineering degree, and it&rsquo;s why the
+          things I make in LEGO Technic keep turning out to be airplanes with working
+          control surfaces rather than static models &mdash; once you&rsquo;ve handled
+          the real controls, a wing that doesn&rsquo;t move stops being satisfying.
+          <a href="project.html?slug=technic-experimental-floatplane">See the floatplane &rarr;</a>
+        </p>
+
+        <div class="source-list">
+          <span class="cap-label">Sources</span>
+          <a href="https://en.wikipedia.org/wiki/Corpo_Aeronautico_Militare" target="_blank" rel="noopener">Corpo Aeronautico Militare</a><br>
+          <a href="https://en.wikipedia.org/wiki/71a_Squadriglia" target="_blank" rel="noopener">71ª Squadriglia</a><br>
+          <a href="https://en.wikipedia.org/wiki/Flight_over_Vienna" target="_blank" rel="noopener">Flight over Vienna, 9 August 1918</a><br>
+          <a href="https://en.wikipedia.org/wiki/Regia_Aeronautica" target="_blank" rel="noopener">Regia Aeronautica</a><br>
+          <a href="https://www.deutschlandmuseum.de/en/history/calendar/1919-09-10-the-treaty-of-saint-germain/" target="_blank" rel="noopener">Treaty of Saint-Germain, 10 September 1919</a><br>
+          <a href="https://www.itamilradar.com/2025/05/24/the-italian-aviation-in-wwi/" target="_blank" rel="noopener">Italian aviation in WWI &mdash; itamilradar</a>
+        </div>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="tight">
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">Clubs &amp; Activities</span></div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="t-date">2026</div>
-        <h3>Northeastern Aviation and Flight Club</h3>
-        <p class="dim">Participating member — flies as a private pilot and helps
-          advise other students interested in pursuing a pilot license.</p>
+</div>
+
+<!-- =========================================================
+     TAB 3 — THE WASPs
+
+     PHOTO CAPTIONS — please verify before this merges to main:
+       1. "Weather Wagon" — aircraft type not identified. Her records list the
+          C-45, C-60 and UC-78 twins; if you know which one this is, name it.
+       2. "Buddy ride" — is Marie in this photo, and which seat? Type unconfirmed.
+       3. Portrait — assumed to be Marie. Add the date if you know it.
+       4. B-17 photo is the well-known USAAF press photograph, NOT family.
+          Captioned as such deliberately. Do not let it read as her.
+     ========================================================= -->
+<div class="tab-panel" data-tab-panel="wasps" role="tabpanel" aria-label="The WASPs" hidden>
+
+  <section>
+    <div class="wrap">
+      <div class="tick-rule"><span class="tick-label">My Connection to the WASPs</span></div>
+
+      <p class="wasp-lede">
+        My great-grandmother, <strong>E. Marie Barrett Marsh</strong>
+        (1919&ndash;1997), flew for the U.S. Army Air Forces during the Second World
+        War as one of the Women Airforce Service Pilots &mdash; the WASP. This is who
+        she was, and what the WASP did.
+      </p>
+
+      <div class="spec-strip">
+        <div class="spec-cell">
+          <div class="label">Applied</div>
+          <div class="value">~25,000</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Earned Wings</div>
+          <div class="value">1,074</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Aircraft Types</div>
+          <div class="value">78</div>
+        </div>
+        <div class="spec-cell">
+          <div class="label">Lives Lost</div>
+          <div class="value">38</div>
+        </div>
       </div>
-      <div class="timeline-item">
-        <div class="t-date">2026</div>
-        <h3>Renewable Energy Northeastern University</h3>
-        <p class="dim">Designing and manufacturing a functioning wind turbine for
-          competition — blade shape, pitch control, and an emergency brake
-          system in Onshape. <a href="project.html?slug=wind-turbine-competition">See project →</a></p>
+
+      <div class="archive-grid">
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/marie-barrett-marsh-portrait.jpg"
+                 alt="Portrait of Marie Barrett Marsh in a leather flight jacket, cloth flying helmet and goggles.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Marie Barrett Marsh</span>
+            Leather jacket, cloth helmet, goggles pushed up &mdash; the standard
+            portrait every WASP sat for.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/marie-barrett-marsh-weather-wagon.jpg"
+                 alt="A WASP in uniform standing in front of a polished twin-engine aircraft with WEATHER WAGON painted on the nose.">
+          </div>
+          <figcaption>
+            <span class="cap-label">&ldquo;Weather Wagon&rdquo;</span>
+            In uniform beside a polished twin carrying <em>Weather Wagon</em> on the
+            nose &mdash; painted for the outfit she was assigned to, the Weather Wing
+            at Asheville.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/marie-barrett-marsh-buddy-ride.jpg"
+                 alt="Two women pilots in the tandem cockpits of a military aircraft, one shielding her eyes against the sun.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Buddy ride</span>
+            Two pilots in the tandem cockpits of a service aircraft &mdash; front seat
+            and back, canopies open on the ramp.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="frame">
+            <img src="assets/images/wasp/wasp-b17-pistol-packin-mama.jpg"
+                 alt="Four WASP pilots in flight jackets carrying parachutes, walking away from a B-17 bomber with Pistol Packin Mama painted on the nose.">
+          </div>
+          <figcaption>
+            <span class="cap-label">Not her &mdash; but her outfit</span>
+            The best-known photograph of the WASP: Frances Green, Margaret
+            &ldquo;Peg&rdquo; Kirchner, Ann Waldner and Blanche Osborn walking off the
+            B-17 <em>Pistol Packin&rsquo; Mama</em> at Lockbourne, Ohio, during
+            four-engine ferry training. A USAAF press photo rather than a family one
+            &mdash; included because it shows the job.
+          </figcaption>
+        </figure>
+
       </div>
-      <div class="timeline-item">
-        <div class="t-date">2022 — 2025</div>
-        <h3>FIRST Robotics Competition (FRC)</h3>
-        <p class="dim">Modeled parts in Onshape and designed solutions for a
-          partially autonomous competition robot. <a href="project.html?slug=frc-robot-design">See project →</a></p>
-      </div>
-      <div class="timeline-item">
-        <div class="t-date">2016 — 2021</div>
-        <h3>First LEGO League Robotics Team (FLL)</h3>
-        <p class="dim">Designed a fully autonomous LEGO robot and attachments to
-          complete challenges on the game board. The team qualified for the
-          state competition every year, winning an award each year.</p>
+
+      <div class="wasp-body">
+
+        <h3>Marie Barrett Marsh &mdash; Class 43-W-7</h3>
+        <p>
+          She learned to fly before the war, earning her license through the Civilian
+          Pilot Training Program in 1940 while at Youngstown College &mdash; one of two
+          women in a class of twenty-nine. She was teaching math and science in Ohio
+          schools when the call for women pilots went out.
+        </p>
+        <p>
+          She reported to Avenger Field in Sweetwater, Texas in May 1943 and graduated
+          that November with class 43-W-7. Her assignment was Weather Wing headquarters
+          at Asheville, North Carolina, flying the Wing&rsquo;s leadership, running
+          courier missions to the Pentagon, and flying mercy flights. Her records list
+          the B-26 Marauder, the A-24 dive bomber, and the C-45, C-60 and UC-78 twins.
+        </p>
+        <p>
+          She married John Marsh in June 1944, raised eight children in Vienna, Ohio,
+          and kept her license current, flying privately until cataract surgery
+          grounded her at 58. Ohio inducted her into its Women&rsquo;s Hall of Fame in
+          1999, two years after she died.
+        </p>
+
+        <h3>Who the WASPs were</h3>
+        <p>
+          The WASP grew out of two separate 1942 experiments &mdash; Nancy Harkness
+          Love&rsquo;s ferrying squadron and Jacqueline Cochran&rsquo;s training
+          detachment &mdash; merged in August 1943 under Cochran. Their job was every
+          domestic flying mission that did not need a combat crew, so that male pilots
+          could be sent overseas: ferrying new aircraft from the factory, test-flying
+          airframes fresh out of repair, instructing, and towing targets while
+          anti-aircraft crews fired live rounds at the sleeve behind them.
+        </p>
+        <p>
+          Roughly 25,000 women applied, 1,830 were accepted for training, and 1,074
+          earned their wings. Between September 1942 and December 1944 they delivered
+          12,650 aircraft across 78 different types &mdash; from primary trainers up to
+          the B-17 and the B-29 &mdash; and logged more than 60 million miles.
+          Thirty-eight of them were killed doing it.
+        </p>
+
+        <h3>Thirty-three years to be called veterans</h3>
+        <div class="placard">
+          <p>
+            The WASP served as civilians for the entire war. When a WASP was killed
+            there was no military funeral, no flag for the family, and no government
+            money to send her home &mdash; the other women in her squadron paid for it
+            themselves.
+          </p>
+        </div>
+        <p>
+          The program was disbanded on 20 December 1944, and for decades afterward its
+          records sat archived and largely forgotten. Congress did not recognize WASP
+          service as active military duty until 1977. The Congressional Gold Medal
+          followed in 2009, accepted at the Capitol in March 2010 by the roughly 200
+          surviving members able to travel there &mdash; twelve years after Marie died.
+          Her medal is held in a museum collection today.
+        </p>
+
+        <div class="source-list">
+          <span class="cap-label">Sources</span>
+          <a href="https://cafriseabove.org/e-marie-barrett-marsh/" target="_blank" rel="noopener">CAF Rise Above &mdash; E. Marie Barrett Marsh</a><br>
+          <a href="https://cafriseabove.org/wasp_artifact/marie-barrett-marsh-congressional-gold-medal/" target="_blank" rel="noopener">CAF Rise Above &mdash; her Congressional Gold Medal</a><br>
+          <a href="https://waspmuseum.org/history/" target="_blank" rel="noopener">National WASP WWII Museum &mdash; History</a><br>
+          <a href="https://www.nationalww2museum.org/war/articles/wasp-women-airforce-service-pilots" target="_blank" rel="noopener">National WWII Museum &mdash; WASP</a><br>
+          <a href="https://www.nps.gov/articles/000/women-airforce-service-pilots-wasp.htm" target="_blank" rel="noopener">National Park Service &mdash; WASP</a>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="tight">
-  <div class="wrap">
-    <div class="tick-rule"><span class="tick-label">Skills &amp; Tools</span></div>
-    <div class="skills-grid">
-      <span class="chip">SolidWorks</span>
-      <span class="chip">Onshape</span>
-      <span class="chip">MATLAB</span>
-      <span class="chip">3D Printing</span>
-      <span class="chip">Laser Cutting</span>
-      <span class="chip">Carving Machines</span>
-      <span class="chip">Vinyl Cutters</span>
-      <span class="chip">Machine Learning / AI</span>
-    </div>
-    <p class="dim" style="margin-top:20px;">Fluent in English (native) and biliterate in Italian.</p>
-  </div>
-</section>
+</div>
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:10px;">
