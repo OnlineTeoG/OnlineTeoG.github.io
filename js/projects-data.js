@@ -34,6 +34,29 @@ const PROJECTS = [
     featured: true,
   },
   {
+    slug: "lego-mini-builds",
+    title: "LEGO Mini-Builds",
+    category: "lego",
+    date: "2026",
+    summary:
+      "A run of micro-scale builds — a Shuttle Carrier 747, an oared galley, a formula car, an ocean liner — each made from as few bricks as the shape will tolerate.",
+    description: [
+      "I keep coming back to mini-builds because of the constraint. A big set hands you the exact part for every curve; a mini-build gives you a handful of ordinary bricks and asks you to suggest the whole thing anyway. Working out which few details actually carry the identity of an object — and which ones you can throw away without anyone noticing — is the part that excites me. It's the most purely creative building I do, and the small ones take the most thinking per brick.",
+      "At this scale you can't reproduce a shape, only imply it, so the job becomes choosing what to keep. An ocean liner lives in the spacing and rake of its funnels; a formula car lives in the wings overhanging front and rear and the wheels standing outside the bodywork; a galley lives in the oars and the ram. Get those handful of cues right and the eye supplies everything else on its own.",
+      "The Shuttle Carrier is the one I'm happiest with, and it's photographed twice for a reason: once with the orbiter mated on the 747's spine the way NASA ferried the shuttles cross-country, and once with the two pulled apart so each airframe reads on its own. They're a single build in two pieces. The problem to solve was the mount — it had to hold the shuttle firmly enough to pick the whole stack up by the 747, and still let the orbiter lift off cleanly without taking a row of the carrier's fuselage with it.",
+    ],
+    tools: ["LEGO", "Micro-Scale Design", "Parts Efficiency"],
+    images: [
+      "assets/images/mini-builds/shuttle-carrier-mated.jpg",
+      "assets/images/mini-builds/shuttle-carrier-separated.jpg",
+      "assets/images/mini-builds/ocean-liner.jpg",
+      "assets/images/mini-builds/galley.jpg",
+      "assets/images/mini-builds/formula-car.jpg",
+    ],
+    links: {},
+    featured: false,
+  },
+  {
     slug: "wind-turbine-competition",
     title: "Competition Wind Turbine",
     category: "competition",
