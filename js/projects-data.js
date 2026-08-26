@@ -15,11 +15,63 @@ const CATEGORIES = [
   { id: "personal", label: "Personal Projects" },
 ];
 
+/* Tags are cross-cutting labels. A project can carry several, so a build
+   can be both "Star Wars" and "Mini-Build". The Projects page turns every
+   tag in use into a clickable filter. Order here = display order. */
+const TAGS = [
+  { id: "lego", label: "LEGO" },
+  { id: "technic", label: "Technic" },
+  { id: "star-wars", label: "Star Wars" },
+  { id: "spacecraft", label: "Spacecraft" },
+  { id: "aircraft", label: "Aircraft" },
+  { id: "aviation", label: "Aviation" },
+  { id: "warship", label: "Ships" },
+  { id: "vehicle", label: "Vehicles" },
+  { id: "mini-build", label: "Mini-Build" },
+  { id: "diorama", label: "Diorama" },
+  { id: "moc", label: "Original Design" },
+  { id: "cad", label: "CAD" },
+  { id: "robotics", label: "Robotics" },
+  { id: "research", label: "Research" },
+  { id: "fabrication", label: "Fabrication" },
+  { id: "woodworking", label: "Woodworking" },
+];
+
 const PROJECTS = [
+  {
+    slug: "venator-star-destroyer",
+    title: "Venator-Class Star Destroyer",
+    category: "lego",
+    tags: ["lego", "star-wars", "spacecraft", "moc"],
+    date: "2026",
+    summary:
+      "A large scratch-built Venator-class Star Destroyer — the Republic attack cruiser from the Clone Wars — in light grey with red command stripes.",
+    description: [
+      "A scratch-built LEGO model of the Venator-class Star Destroyer, the Republic's main capital ship through the Clone Wars. It's an original build rather than a set: the wedge hull, the twin dorsal command towers, and the long red spine stripes are all worked out in brick from reference images.",
+      "Add your own notes here — rough length in studs, how you handled the pointed bow and the dorsal hangar spine, part count, and how long it took. (This description is a placeholder for you to edit.)",
+    ],
+    tools: ["LEGO", "Scale Modeling", "MOC Design"],
+    images: [
+      { src: "assets/images/venator-star-destroyer/venator-1.jpg", caption: "Full side profile" },
+      { src: "assets/images/venator-star-destroyer/venator-2.jpg", caption: "Bow, three-quarter view" },
+      { src: "assets/images/venator-star-destroyer/venator-3.jpg", caption: "Dorsal spine and command towers" },
+      { src: "assets/images/venator-star-destroyer/venator-4.jpg", caption: "On its display stand" },
+    ],
+    references: [
+      {
+        src: "assets/images/venator-star-destroyer/reference-venator.jpg",
+        caption: "Reference — Venator-class Star Destroyer",
+      },
+    ],
+    links: {},
+    featured: true,
+    needsDetail: true,
+  },
   {
     slug: "technic-experimental-floatplane",
     title: "Experimental Floatplane — LEGO Technic",
     category: "lego",
+    tags: ["lego", "technic", "aircraft", "aviation", "moc"],
     date: "2026",
     summary:
       "A scratch-built LEGO Technic bush plane in the spirit of a Piper Cub — currently on floats, with working ailerons, flaps, and elevator.",
@@ -37,6 +89,7 @@ const PROJECTS = [
     slug: "lego-mini-builds",
     title: "LEGO Mini-Builds",
     category: "lego",
+    tags: ["lego", "mini-build", "moc"],
     date: "2026",
     summary:
       "A run of micro-scale builds — a Shuttle Carrier 747, an oared galley, a formula car, an ocean liner — each made from as few bricks as the shape will tolerate.",
@@ -60,6 +113,7 @@ const PROJECTS = [
     slug: "wind-turbine-competition",
     title: "Competition Wind Turbine",
     category: "competition",
+    tags: ["cad", "fabrication", "moc"],
     date: "2026 — In Progress",
     summary:
       "Designing and manufacturing a functioning wind turbine for competition at Northeastern, with a focus on blade shape, pitch control, and an emergency brake.",
@@ -77,6 +131,7 @@ const PROJECTS = [
     slug: "frc-robot-design",
     title: "FIRST Robotics Competition — Robot Subsystems",
     category: "competition",
+    tags: ["cad", "robotics"],
     date: "2022 — 2025",
     summary:
       "Four seasons modeling and designing subsystems for a partially autonomous competition robot in Onshape.",
@@ -94,6 +149,7 @@ const PROJECTS = [
     slug: "gesture-recognition-active-suspension",
     title: "Gesture Recognition for Active Suspension",
     category: "research",
+    tags: ["research", "cad"],
     date: "Apr — May 2025",
     summary:
       "Trained a machine-learning model to recognize hand, face, and body gestures, then used it to drive a car's active suspension in response — a patented result from a Clearmotion internship.",
