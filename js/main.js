@@ -25,6 +25,10 @@ function projectImages(project) {
 function projectReferences(project) {
   return (project.references || []).map(normImage);
 }
+// Videos: { src, poster, caption } objects (or plain src strings).
+function projectVideos(project) {
+  return (project.videos || []).map(normImage);
+}
 
 function initNav() {
   const toggle = document.querySelector(".nav-toggle");
@@ -200,6 +204,18 @@ function initProjectDetail() {
           .join("")}</div>`
       : "";
 
+  const vids = projectVideos(project);
+  const videoBlock = vids.length
+    ? `<div class="detail-videos">${vids
+        .map(
+          (v) => `<figure class="media-figure video">
+         <video src="${v.src}"${v.poster ? ` poster="${v.poster}"` : ""} controls muted playsinline preload="metadata"></video>
+         <figcaption>${v.caption || ""}</figcaption>
+       </figure>`
+        )
+        .join("")}</div>`
+    : "";
+
   const paragraphs = project.description.map((p) => `<p>${p}</p>`).join("");
 
   const toolChips = (project.tools || [])
@@ -237,6 +253,7 @@ function initProjectDetail() {
       <div class="detail-main">
         ${mainImage}
         ${thumbs}
+        ${videoBlock}
         <div class="detail-body" style="margin-top:28px;">${paragraphs}</div>
       </div>
       <aside class="spec-sheet">
